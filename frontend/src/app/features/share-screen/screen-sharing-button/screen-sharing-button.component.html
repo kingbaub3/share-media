@@ -1,0 +1,3 @@
+
+<button color="primary" (click)="startSharing()" mat-raised-button *ngIf="!streamingService.isStreaming()">Start Sharing</button>
+<button color="primary" (click)="stopSharing()" mat-button *ngIf="streamingService.isStreaming()">Stop Sharing</button>
